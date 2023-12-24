@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(121, 123, 121) url("../bg.jpg") no-repeat fixed center ;
+    background-size: cover;
+    z-index: -1;
+}
+.brand{
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background: #0d0d0d;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.nav-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+}
+.nav-box li{
+    list-style: none;
+    margin: 10px;
+}
+.nav-link:hover{
+    color: #224433;
+    background-color: white;
+    padding: 6px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+.menu-link {
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    margin-top: 7px;
+    margin-right: 5px;
+    list-style: none;
+}
+#menu {
+    cursor: pointer;
+    display: none;
+}
+
+.footer{
+    background-color: #000000;
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 800px) {
+    #menu {
+        display: block;
+        height: 39px;
+        padding-left: 10px;
+    }
+    #menu:hover {
+        background-color: white;
+        padding-left: 7px;
+        border-radius: 5px 0 0 5px;
+        .menu-link {
+            background-color: #224433;
+        }
+    }
+  
+    .nav-box {
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+        width: 100%;
+        opacity: 0.8;
+        display: none;
+    }
+     
+    .nav-link:hover {
+        padding: 5px 120px;
+    }
+    
+    
+}
